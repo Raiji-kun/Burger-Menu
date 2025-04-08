@@ -1,7 +1,9 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 function App(){
-let [nom, setNom] = useState("")
+let [nom, setNom] = useState("");
+const navigate = useNavigate();
 
 const handleclik = (e) =>{
   e.preventDefault(); 
@@ -13,6 +15,7 @@ const handleclik = (e) =>{
   }
   setNom("")
   alert("bonjour "+ nom)
+  navigate('order/'+ nom);
 }
 
 
