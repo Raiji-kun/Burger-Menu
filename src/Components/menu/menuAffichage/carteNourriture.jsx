@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from './Button'
 
 function CarteNourriture({id , title , imageSource, price}) {
 
@@ -19,7 +20,7 @@ function CarteNourriture({id , title , imageSource, price}) {
 
         <div className='description'>
           <p>{price}円</p>
-          <button>ajouter</button>
+          <Button />
         </div>
 
       </div>
@@ -47,14 +48,17 @@ flex-direction: column;
   img{
     width: 100%;
     height: 95%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
+}
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
 }
 
 .infoText{
   height: 50%;
-  
   display: flex;
   flex-direction: column;
 }
@@ -62,8 +66,9 @@ flex-direction: column;
 .description{
   
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 
 
 `
