@@ -1,26 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 
+function carteNourriture({menu}) {
 
-function MenuAffiche( {menu} ) {
+  return (
 
-    console.log(menu)
-
-
-    return (
-        
     <Cartenourriture id={menu.id}>
-        <img src={menu.image} />
-        <h2>{menu.nom}</h2>
-        <p>{menu.prix}</p>
-    </Cartenourriture>
-
-
-    
+    <img src={menu.image} />
+    <h2>{menu.nom}</h2>
+    <p>{menu.prix}</p>
+</Cartenourriture>
   )
 }
-
-
 const Cartenourriture = styled.div`
 
 
@@ -38,4 +29,4 @@ img{   width: 50%;
 }
 
 `
-export default MenuAffiche
+export default carteNourriture
