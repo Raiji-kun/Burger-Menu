@@ -10,7 +10,7 @@ export default function MenuCarte() {
   <MenuCarteNourriturre>
         {products.map((x) => {
            console.log(x);
-      return <CarteNourriture key={x.id} menu={x} />; })}
+      return <CarteNourriture key={x.id} id={x.id} title={x.title} imageSource={x.imageSource} price={x.price}/>; })}
     </MenuCarteNourriturre>
   )
 
@@ -20,13 +20,14 @@ const MenuCarteNourriturre = styled.div`
 width: 100%; 
 min-height: 100%;
 
-display: flex;
-flex-wrap: wrap;
-  justify-content: flex-start;
-justify-content: space-around;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-row-gap: 60px;
+padding: 50px 50px 150px;
+justify-items: center;
 
 border: black solid 1px;
 background: #F5F5F7;
-    box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset;
-    padding: 50px 50px 150px;
-    grid-row-gap: 60px;`
+box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset;
+    
+    `
