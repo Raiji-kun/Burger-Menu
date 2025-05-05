@@ -6,7 +6,7 @@ import MenuCarte from './menuCarte'
 function MenuAffiche() {
     return (
       <Main>
-        <Basket />
+        {/* <Basket /> */}
         <MenuCarte />
     </Main>
   )
@@ -16,12 +16,12 @@ const Main = styled.div`
 width: 100%; 
 height: 1000px;
 display: grid;
-grid-template-columns: 25% 1fr; 
+grid-template-columns:  1fr; 
 
 `
-const Basket = styled.div`
+/* const Basket = styled.div`
   background-color: blue;
-`
+` */
 
 
 
