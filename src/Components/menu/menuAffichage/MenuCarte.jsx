@@ -2,16 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import CarteNourriture from './carteNourriture'
 import { useState } from 'react'
-import {fakeMenu1} from "../fakeData/fakeMenu"
+import {fakeMenu2} from "../fakeData/fakeMenu"
 
 export default function MenuCarte() {
-  const [products, setproducts] = useState(fakeMenu1);
+  const [products, setproducts] = useState(fakeMenu2);
   return (  
   <MenuCarteNourriturre>
         {products.map((x) => {
            console.log(x);
-      return <CarteNourriture menu={x} />;
-          })}
+      return <CarteNourriture key={x.id} menu={x} />; })}
     </MenuCarteNourriturre>
   )
 
