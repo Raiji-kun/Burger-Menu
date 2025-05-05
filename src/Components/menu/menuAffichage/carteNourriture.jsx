@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function carteNourriture({menu}) {
+function CarteNourriture({menu}) {
 
   return (
 
@@ -29,4 +29,4 @@ img{   width: 50%;
 }
 
 `
-export default carteNourriture
+export default CarteNourriture
