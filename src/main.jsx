@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Order from './Order.jsx'
 import Error from './Error.jsx'
+import "./App.css"
 
 
 createRoot(document.getElementById('root')).render(
