@@ -6,9 +6,9 @@ function CarteNourriture({menu}) {
   return (
 
     <Cartenourriture id={menu.id}>
-    <img src={menu.image} />
-    <h2>{menu.nom}</h2>
-    <p>{menu.prix}</p>
+    <img src={menu.imageSource} />
+    <h2>{menu.title}</h2>
+    <p>{menu.price}</p>
 </Cartenourriture>
   )
 }

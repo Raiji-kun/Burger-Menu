@@ -1,53 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import burger from "../../../assets/burger1.png"
-import burger2 from "../../../assets/burger2.png"
 import CarteNourriture from './carteNourriture'
+import { useState } from 'react'
+import {fakeMenu1} from "../fakeData/fakeMenu"
 
 export default function MenuCarte() {
-    const menuNourriture = [
-        {
-          image: burger,
-          id: "1",
-          nom: "Big Mac",
-          prix: "5 euros",
-        },
-        {
-          image: burger2,
-          id: "2",
-          nom: "cheeseburger",
-          prix: "3 euros",
-        },
-        {
-          image: "",
-          id: "3",
-          nom: "raphael",
-          prix: "1 euros",
-        },
-        {
-          image: burger,
-          id: "4",
-          nom: "Big Mac",
-          prix: "5 euros",
-        },
-        {
-          image: burger,
-          id: "4",
-          nom: "Big Mac",
-          prix: "5 euros",
-        },
-        {
-          image: burger,
-          id: "4",
-          nom: "Big Mac",
-          prix: "5 euros",
-        },
-    
-      ]
-      ;
+  const [products, setproducts] = useState(fakeMenu1);
   return (  
   <MenuCarteNourriturre>
-        {menuNourriture.map((x) => ( <CarteNourriture menu={x} />))}
+        {products.map((x) => {
+           console.log(x);
+      return <CarteNourriture menu={x} />;
+          })}
     </MenuCarteNourriturre>
   )
 
