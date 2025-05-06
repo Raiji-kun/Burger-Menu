@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import logo from "../../assets/logo-orange.png"
 import styled from 'styled-components';
 import { BsPersonCircle } from "react-icons/bs";
+import ToggleButton from './menuAffichage/ToggleButton';
 
 export default function Navbar() {
     const { nom } = useParams();
@@ -14,6 +15,7 @@ export default function Navbar() {
       height : "60px"}}/>
       <h1>burger</h1>
     </div>
+    <ToggleButton />
     <div className='block2'>
       <div className='block2bis1'>
         <div className='title'>
