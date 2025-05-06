@@ -100,7 +100,7 @@ const ToggleButtonStyled = styled.div`
       left: auto;
       opacity: 1;
       color: ${theme.colors.primary};
-      /*font-weight: ${theme.fonts.weights.bold};*/
+     
       
     }
 

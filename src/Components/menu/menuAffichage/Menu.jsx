@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import MenuCarte from './MenuCarte'
+import NavbarRightSideIncomplet from './NavbarRightSideIncomplet'
 
 
 function MenuAffiche() {
@@ -8,6 +9,7 @@ function MenuAffiche() {
       <Main>
         <Basket />
         <MenuCarte />
+        <NavbarRightSideIncomplet />
     </Main>
   )
 }
