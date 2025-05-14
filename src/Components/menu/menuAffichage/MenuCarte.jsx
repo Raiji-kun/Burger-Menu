@@ -9,7 +9,6 @@ export default function MenuCarte() {
   return (  
   <MenuCarteNourriturre>
         {products.map((x) => {
-           console.log(x);
       return <CarteNourriture key={x.id} id={x.id} title={x.title} imageSource={x.imageSource} price={x.price}/>; })}
     </MenuCarteNourriturre>
   )

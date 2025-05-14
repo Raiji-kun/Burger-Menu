@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import MenuCarte from './menuCarte'
+import MenuCarte from './MenuCarte'
 
 
 function MenuAffiche() {
@@ -8,6 +8,7 @@ function MenuAffiche() {
       <Main>
         <Basket />
         <MenuCarte />
+        
     </Main>
   )
 }
