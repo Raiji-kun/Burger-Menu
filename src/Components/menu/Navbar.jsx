@@ -1,5 +1,5 @@
 import  {useState}  from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams } from "react-router"
 import logo from "../../assets/logo-orange.png"
 import styled from 'styled-components';
 import { BsPersonCircle } from "react-icons/bs";

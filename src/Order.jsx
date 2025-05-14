@@ -2,12 +2,15 @@ import React from 'react'
 import styled from 'styled-components';
 import MenuAffiche from './Components/menu/menuAffichage/Menu';
 import Navbar from './Components/menu/Navbar';
+import BarreAdmin from './Components/BarreAdmin';
 
 const Order = () => {
   return (
   <OrderPage>
     <Navbar/>
     <MenuAffiche />
+    <BarreAdmin />
+    
   </OrderPage>
   )
 }

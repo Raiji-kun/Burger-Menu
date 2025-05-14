@@ -3,13 +3,13 @@ import { ToastContainer } from "react-toastify"
 
 function AdminToast() {
   return (
-       <toastAdmin>
+       <ToastAdmin>
         <ToastContainer className="toaster" bodyClassName="body-toast" />
-       </toastAdmin>
+       </ToastAdmin>
   )
 }
 
-const toastAdmin = styled.div`
+const ToastAdmin = styled.div`
     
 .toaster {
     max-width: 300px;
