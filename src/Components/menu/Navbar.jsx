@@ -1,12 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import logo from "../../assets/logo-orange.png"
 import styled from 'styled-components';
 import { BsPersonCircle } from "react-icons/bs";
 import ToggleButton from './menuAffichage/ToggleButton';
+import { toast } from "react-toastify"
+import AdminToast from './AdminToast';
 
 export default function Navbar() {
     const { nom } = useParams();
+    const [notifyAdmin, setNotifyAdmin] = useState(false)
+
+const displayNotifyAdmin = () => {
+  if(!notifyAdmin){
+    toast.info("Mode admin activé", {
+    theme: "dark",
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+  }
+return setNotifyAdmin(!notifyAdmin) 
+
+}
+
+
   return (
     <NavbarContainer>
     <div className='block1'>    
@@ -15,7 +37,8 @@ export default function Navbar() {
       height : "60px"}}/>
       <h1>burger</h1>
     </div>
-    <ToggleButton />
+    <ToggleButton     labelIfChecked = "Admin activer" labelIfUnchecked = "Admin desactiver" onToggle={displayNotifyAdmin} />
+      <AdminToast />
     <div className='block2'>
       <div className='block2bis1'>
         <div className='title'>
@@ -95,4 +118,7 @@ box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.2);
   align-items: center;
 
 }
+
+
+
 `
