@@ -1,4 +1,4 @@
-import  useState  from 'react'
+import  {useState}  from 'react'
 import { useParams } from 'react-router-dom'
 import logo from "../../assets/logo-orange.png"
 import styled from 'styled-components';
