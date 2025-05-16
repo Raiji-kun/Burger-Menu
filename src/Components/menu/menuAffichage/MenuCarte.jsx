@@ -3,14 +3,20 @@ import styled from 'styled-components'
 import CarteNourriture from './carteNourriture'
 import { useState } from 'react'
 import {fakeMenu2} from "../fakeData/fakeMenu"
+import BarreAdmin from './BarreAdmin'
+
 
 export default function MenuCarte() {
   const [products, setproducts] = useState(fakeMenu2);
   return (  
-  <MenuCarteNourriturre>
+    <div>
+        <MenuCarteNourriturre>
         {products.map((x) => {
       return <CarteNourriture key={x.id} id={x.id} title={x.title} imageSource={x.imageSource} price={x.price}/>; })}
     </MenuCarteNourriturre>
+    <BarreAdmin />
+    </div>
+
   )
 
 }
