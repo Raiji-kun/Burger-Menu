@@ -1,1 +1,1 @@
-<h1>Deploy link : https://crazy-burger-iuyp8gpib-raijikuns-projects.vercel.app</h1>
+<h1>Deploy link : https://crazy-burger-fycozzw98-raijikuns-projects.vercel.app</h1>
