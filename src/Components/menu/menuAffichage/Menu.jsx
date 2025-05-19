@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import MenuCarte from './MenuCarte'
 
@@ -21,7 +20,7 @@ grid-template-columns: 25% 1fr;
 
 `
 const Basket = styled.div`
-  background-color: blue;
+  background-color: black;
 `
 
 
